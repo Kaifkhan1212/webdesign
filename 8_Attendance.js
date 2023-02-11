@@ -1,0 +1,33 @@
+/* Q.8] A student will not be allowed to sit in exam if their attendance is less than 75%.
+        a] Take following Input from user : -
+            i] No of classes held.
+            ii] No of classes attended.
+        b] Give following iutput : -
+            i] % of classes attended.
+            ii] Allowed in exam or not. */
+
+let Attendance
+
+let classes = prompt(" The number of classes held")
+classes = Number.parseInt(classes)
+
+let attended = prompt("The number of classes attended")
+attended = Number.parseInt(attended);
+
+Attendance = attended / classes * 100
+if (Attendance >= 75 && Attendance <= 100)
+{
+  console.log("\n Percentage of classes attended = %d",Attendance)
+  console.log("\n You are allowed to sit for Exams")
+}
+  
+else if (Attendance >= 0 && Attendance <= 74)
+{
+  console.log("\n Percentage of classes attended = %d%", Attendance)
+  console.log("\n You are not allowed to sit for Exams")
+}
+  
+else
+{
+  console.log("Invalid Input")
+} 
